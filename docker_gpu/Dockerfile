@@ -1,7 +1,7 @@
 FROM gcr.io/tensorflow/tensorflow:latest-gpu
 MAINTAINER Akshay Bhat <akshayubhat@gmail.com>
 
-RUN add-apt-repository ppa:kirillshkrogalev/ffmpeg-next && \
+RUN add-apt-repository 'deb http://ppa.launchpad.net/kirillshkrogalev/ffmpeg-next/ubuntu trusty main ' && \
     apt-get update && apt-get install -y protobuf-compiler \
     python-scipy \
     libblas-dev \
